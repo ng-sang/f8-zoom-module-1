@@ -1,0 +1,297 @@
+@font-face {
+  font-family: "VNIHLThuphap";
+  src: url("assets/fonts/VNI-HLThuphap.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SVN-Kimberley";
+  src: url("assets/fonts/SVN-Kimberley.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SVN-Poppins-Black";
+  src: url("assets/fonts/Poppins-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("assets/fonts/Quicksand.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+
+  position: absolute;
+}
+/* phần htop*/
+.htop {
+  width: 100%;
+  height: 2.4375rem;
+  background: #ed5a25;
+
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.htop .htop-right {
+  align-items: center;
+  gap: 0.78856rem;
+
+  display: flex;
+  justify-content: center;
+  left: 7%;
+  width: auto;
+  position: absolute;
+}
+.htop .htop-right a {
+  color: var(--Greys-Colors-07, #fff);
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.htop .htop-left {
+  display: flex;
+  position: absolute;
+
+  gap: 0.6rem;
+  justify-content: center;
+  width: 17.8rem;
+  right: 6.1%;
+}
+.htop .htop-left .htop-left-right {
+  gap: 0.3rem;
+  display: flex;
+  width: auto;
+  height: 1.125rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.htop .htop-left .htop-left-right a {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.875rem;
+  color: var(--Greys-Colors-07, #fff);
+  display: flex;
+  height: 1.125rem;
+  width: 8rem;
+  justify-content: center;
+}
+.htop .htop-left .htop-left-main {
+  gap: 0.3rem;
+  display: flex;
+  width: auto;
+  height: 1.125rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.htop .htop-left .htop-left-main a {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.875rem;
+  color: var(--Greys-Colors-07, #fff);
+}
+.htop .htop-left .htop-left-left {
+  justify-content: space-between;
+  align-items: center;
+  height: 1.25rem;
+  display: flex;
+}
+
+.htop .htop-left .htop-left-left a {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.875rem;
+  color: var(--Greys-Colors-07, #fff);
+  width: 5rem;
+}
+
+/* phần hmain*/
+.hmain {
+  width: 100%;
+  height: 5.9375rem;
+  position: absolute;
+  background: #fff4f1;
+  display: flex;
+  align-items: center;
+}
+.hmain .hmain-contener {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 3.8125rem;
+  align-items: center;
+
+  flex-shrink: 0;
+  position: absolute;
+}
+.hmain .hmain-contener .hmain-contener-left {
+  margin-left: 7.87rem;
+}
+.hmain .hmain-contener .hmain-contener-left a {
+  display: flex;
+  align-items: center;
+  color: #404040;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 2.024rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.89144rem;
+}
+.hmain .hmain-contener .hmain-contener-left a span {
+  color: #ed5a25;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.024rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.89144rem;
+}
+
+.hmain .hmain-contener .hmain-contener-trai {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.78856rem;
+  width: 30rem;
+  height: 2.62856rem;
+  background: #fff;
+  margin-right: 6.9rem;
+  border-radius: 99px;
+}
+.header .hmain .hmain-contener .hmain-contener-trai .search {
+  display: flex;
+  width: 27%;
+  position: absolute;
+  height: 2.63rem;
+  align-items: center;
+}
+.header .hmain .hmain-contener .hmain-contener-trai .search .categories {
+  display: flex;
+  width: 35%;
+  height: 100%;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  margin-left: 0.5rem;
+  color: var(--Greys-Colors-03, #aeaeae);
+  font-family: "Manrope", sans-serif;
+  font-size: 0.92rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  left: 0;
+}
+
+.header .hmain .hmain-contener .hmain-contener-trai .search input {
+  border: none;
+  outline: none;
+  color: var(--Greys-Colors-03, #aeaeae);
+  font-family: "Manrope", sans-serif;
+  font-size: 0.92rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  background: none;
+  height: 100%;
+  width: 80%;
+  left: 7rem;
+}
+.header .hmain .hmain-contener .hmain-contener-trai .search .search-icon {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -3rem;
+  transition: all 0.5s;
+}
+.header .hmain .hmain-contener .hmain-contener-trai .search .search-icon:hover {
+  background: #ed5a25;
+}
+
+/* phần hbot*/
+.hbot {
+  width: 100%;
+  height: 3.375rem;
+  position: absolute;
+  flex-shrink: 0;
+  display: flex;
+  background: white;
+  align-items: center;
+  justify-content: space-between;
+  top: 8.375rem;
+}
+.hbot ul {
+  color: var(--Greys-Colors-01, #404040);
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.92rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  list-style: none;
+  margin-left: 7%;
+  gap: 1rem;
+
+  width: 22%;
+  align-items: center;
+}
+.hbot .Hotline-11 {
+  display: flex;
+  width: 12%;
+  align-items: center;
+  gap: 0.52569rem;
+  position: absolute;
+  right: 6.3%;
+}
+.hbot div span {
+  display: block;
+
+  width: 1.05144rem;
+  height: 1.05144rem;
+  flex-shrink: 0;
+  align-items: center;
+}
+.hbot div span .s1 {
+  position: relative;
+  width: auto;
+  right: -0.1rem;
+  top: 20%;
+  z-index: 50000;
+}
+.hbot div span .s2 {
+  position: absolute;
+  width: auto;
+
+  z-index: 50000;
+}
+.hbot div a {
+  color: var(--Greys-Colors-02, #5c5c5c);
+  font-family: Quicksand;
+  font-size: 0.92rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}

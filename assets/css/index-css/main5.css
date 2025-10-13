@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url("assets/fonts/Quicksand.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SVN-Poppins-Black";
+  src: url("assets/fonts/Poppins-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.best-selling-products {
+  max-width: 75rem;
+  top: 180rem;
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  position: absolute;
+  display: flex;
+}
+/*writing */
+.best-selling-products .writing {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+.best-selling-products .writing .left-hand-letter {
+  color: var(--Color-Text-01, #323232);
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.best-selling-products .writing .right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+.best-selling-products .writing .right-side .right-side-1 {
+  color: var(--Greys-Colors-01, #404040);
+
+  /* Body 1 */
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem; /* 150% */
+}
+
+/* double-nút */
+.best-selling-products .writing .right-side .img-double-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+.best-selling-products .writing .right-side .img-double-1 .img1 {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  background: #ffece5;
+  border-radius: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+  color: var(--Primary-Colors, #ed5a25);
+  transition: 0.5s;
+}
+.best-selling-products .writing .right-side .img-double-1 .img2 {
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  background: #ffece5;
+  border-radius: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--Primary-Colors, #ed5a25);
+  transition: 0.5s;
+}
+.best-selling-products .writing .right-side .img-double-1 .img1:hover {
+  background: var(--Primary-Colors, #ed5a25);
+  color: #ffece5;
+}
+.best-selling-products .writing .right-side .img-double-1 .img2:hover {
+  background: var(--Primary-Colors, #ed5a25);
+  color: #ffece5;
+}
+/* kết thúc*/
+
+.best-selling-products .product-image {
+  max-width: 75rem;
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+  position: absolute;
+
+  top: 3.94rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.3rem;
+}
+.best-selling-products .product-image .best-selling-posters {
+  width: 28.38169rem;
+  height: 23.3125rem;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  background: var(--Primary-Colors, #ed5a25);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.best-selling-products .product-image .best-selling-posters img {
+  width: 27.07175rem;
+  height: 14.25rem;
+  flex-shrink: 0;
+}
+.best-selling-products .product-image .best-selling-posters span {
+  color: var(--Secondary-Colors-12, #fff4f1);
+  display: flex;
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 22.5625rem;
+}
+.best-selling-products .product-image .best-selling-posters .bt1 {
+  display: flex;
+  width: 7.3125rem;
+  height: 2.25rem;
+  padding: 0.625rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 6.25rem;
+  border: 1px solid var(--Greys-Colors-07, #fff);
+  background: var(--Greys-Colors-07, #fff);
+  color: #ed5a25;
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem;
+  transition: all 0.5s;
+}
+.best-selling-products .product-image .best-selling-posters .bt1:hover {
+  color: var(--Greys-Colors-07, #fff);
+  background: #ed5a25;
+  border: 1px solid var(--Greys-Colors-07, #fff);
+}
+
+/* */
+
+.best-selling-products .set-3-products {
+  display: flex;
+  width: 44.31038rem;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* hình ảnh sản phẩm */
+.best-selling-products .set-3-products .product-images {
+  width: 13.75rem;
+  height: 20.625rem;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+
+  border-radius: 1.875rem;
+  border: 1px solid var(--Greys-Colors-06, #f2f2f2);
+  background: #fff;
+}
+.best-selling-products .set-3-products .product-images .img1 {
+  width: 12.375rem;
+  height: 10.75rem;
+  flex-shrink: 0;
+  border-radius: 1.25rem;
+  margin-top: 0.3rem;
+}
+
+.best-selling-products .set-3-products .product-images .img2 {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  top: 2rem;
+  margin-right: -9rem;
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  border: 0.2rem solid white;
+}
+.best-selling-products .set-3-products .product-images .text-price {
+  display: flex;
+  width: 10.16169rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  position: absolute;
+  flex-wrap: wrap;
+  bottom: 6rem;
+}
+
+.best-selling-products .set-3-products .product-images .text-price .text {
+  align-self: stretch;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.best-selling-products .set-3-products .product-images .text-price .price {
+  color: var(--Primary-Colors, #ed5a25);
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.97031rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  align-self: stretch;
+}
+.best-selling-products .set-3-products .product-images .button-buy {
+  width: 11.875rem;
+  height: 2.25rem;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 18rem;
+  border-radius: 8.08619rem;
+  background: var(--Secondary-Colors-12, #fff4f1);
+  outline: none;
+  gap: 0.5rem;
+  color: var(--Primary-Colors, #ed5a25);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.97031rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 0.5s;
+}
+.set-3-products .product-images .button-buy:hover {
+  background: #ed5a25;
+  color: #ffece5;
+}

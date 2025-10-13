@@ -1,0 +1,193 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url("assets/fonts/Quicksand.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SVN-Poppins-Black";
+  src: url("assets/fonts/Poppins-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.Latest-products {
+  max-width: 75rem;
+  top: 210rem;
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  position: absolute;
+  display: flex;
+}
+
+/* mục conten*/
+.Latest-products .writing {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+.Latest-products .writing .left-hand-letter {
+  color: var(--Color-Text-01, #323232);
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.Latest-products .writing .right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* 2 nút */
+.Latest-products .writing .right-side .right-side-1 {
+  color: var(--Greys-Colors-01, #404040);
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.Latest-products .writing .right-side .img-double-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+.Latest-products .writing .right-side .img-double-1 .img1 {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  background: #ffece5;
+  border-radius: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+  color: var(--Primary-Colors, #ed5a25);
+  transition: 0.5s;
+}
+.Latest-products .writing .right-side .img-double-1 .img2 {
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  background: #ffece5;
+  border-radius: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--Primary-Colors, #ed5a25);
+  transition: 0.5s;
+}
+.Latest-products .writing .right-side .img-double-1 .img1:hover {
+  background: var(--Primary-Colors, #ed5a25);
+  color: #ffece5;
+}
+.Latest-products .writing .right-side .img-double-1 .img2:hover {
+  background: var(--Primary-Colors, #ed5a25);
+  color: #ffece5;
+}
+
+/* kết thuc */
+.Latest-products .set-5-products {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 1.5rem;
+
+  top: 3.5rem;
+}
+
+/* hình ảnh sản phẩm */
+.Latest-products .set-5-products .product-images {
+  width: 13.75rem;
+  height: 20.625rem;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+
+  border-radius: 1.875rem;
+  border: 1px solid var(--Greys-Colors-06, #f2f2f2);
+  background: #fff;
+}
+.Latest-products .set-5-products .product-images .img1 {
+  width: 12.375rem;
+  height: 10.75rem;
+  flex-shrink: 0;
+  border-radius: 1.25rem;
+  margin-top: 0.3rem;
+}
+.Latest-products .set-5-products .product-images .img2 {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  top: 1rem;
+  margin-right: -9rem;
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  border: 0.2rem solid white;
+}
+.Latest-products .set-5-products .product-images .text-price {
+  display: flex;
+  width: 10.16169rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  position: absolute;
+  flex-wrap: wrap;
+  bottom: 4.5rem;
+}
+.Latest-products .set-5-products .product-images .text-price .text {
+  align-self: stretch;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.Latest-products .set-5-products .product-images .text-price .price {
+  color: var(--Primary-Colors, #ed5a25);
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.97031rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  align-self: stretch;
+}
+.Latest-products .set-5-products .product-images .button-buy {
+  width: 11.875rem;
+  height: 2.25rem;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 17rem;
+  border-radius: 8.08619rem;
+  background: var(--Secondary-Colors-12, #fff4f1);
+  outline: none;
+  gap: 0.5rem;
+  color: var(--Primary-Colors, #ed5a25);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.97031rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 0.5s;
+}
+
+.Latest-products .set-5-products .product-images .button-buy:hover {
+  background: #ed5a25;
+  color: #ffece5;
+}

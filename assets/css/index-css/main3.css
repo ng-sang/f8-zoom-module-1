@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url("assets/fonts/Quicksand.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* bắt đầu phần css poster-announcement */
+
+.poster-announcement {
+  width: 75rem;
+  height: 18.4375rem;
+  flex-shrink: 0;
+  position: absolute;
+  overflow: hidden;
+  top: 110rem;
+  border-radius: 1.875rem;
+  background: linear-gradient(97deg, #ed5a25 39.85%, #ff8e65 115.03%);
+}
+
+.poster-announcement .imm1 {
+  position: absolute;
+  width: 30.27525rem;
+  height: 24.625rem;
+  flex-shrink: 0;
+  background: -105.459px -82px / 147.674% 142.132% no-repeat;
+  right: -1rem;
+  bottom: -8rem;
+}
+.poster-announcement .imm2 {
+  position: absolute;
+  width: 29.5rem;
+  height: 24.625rem;
+  left: 10rem;
+  top: 4rem;
+}
+.poster-announcement.imm3 {
+  position: absolute;
+  width: 20.5rem;
+  height: 20.5;
+  top: -17rem;
+  transform: rotate(-30deg);
+  left: -18rem;
+}
+.poster-announcement.imm4 {
+  position: absolute;
+  width: 5.48163rem;
+  height: 5.48144rem;
+  transform: rotate(43.931deg);
+  flex-shrink: 0;
+  top: 2rem;
+  left: 10rem;
+}
+.poster-announcement .spp {
+  display: flex;
+  width: 23.08175rem;
+  height: 9.625rem;
+  flex-shrink: 0;
+  position: absolute;
+  top: 5.6rem;
+  left: 6.8rem;
+
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.poster-announcement .spp .spp1 {
+  color: var(--Background-03, #f2f2f2);
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.poster-announcement .spp .spp2 {
+  color: #fff;
+  text-align: center;
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+}
+.poster-announcement .spp .spp3 {
+  display: flex;
+  width: 8.88238rem;
+  height: 2.25rem;
+  padding: 0.625rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  flex-shrink: 0;
+  border-radius: 6.25rem;
+  border: 1px solid var(--Primary-Colors, #ed5a25);
+  background: #f5f6f8;
+  color: #ed5a25;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem; /* 142.857% */
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.5s;
+}
+
+.poster-announcement .spp .spp3 span {
+  display: flex;
+  width: 0.67681rem;
+  height: 0.67681rem;
+  flex-shrink: 0;
+  border-radius: 0.67681rem;
+  background: #ffece5;
+}
+.poster-announcement .spp .spp3:hover {
+  background: linear-gradient(#ff9873, #f0612d);
+  width: 9.88238rem;
+  height: 2.5rem;
+}
+
+/* kết thúc phần css poster-announcement */

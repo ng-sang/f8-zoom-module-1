@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "VNIHLThuphap";
+  src: url("assets/fonts/VNI-HLThuphap.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SVN-Kimberley";
+  src: url("assets/fonts/SVN-Kimberley.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SVN-Poppins-Black";
+  src: url("assets/fonts/Poppins-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("assets/fonts/Quicksand.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.News-Promotions {
+  display: flex;
+  width: 100%;
+  max-width: 75rem;
+  height: auto;
+  justify-content: space-between;
+  top: 270rem;
+  flex-shrink: 0;
+  position: absolute;
+
+  flex-wrap: wrap;
+}
+
+/* mục conten*/
+.News-Promotions .writing {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.News-Promotions .writing .left-hand-letter {
+  color: var(--Color-Text-01, #323232);
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.News-Promotions .writing .right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* 1 nút */
+
+.News-Promotions .writing .right-side .img-double-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.News-Promotions .writing .right-side .img-double-1 .img2 {
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  background: #ffece5;
+  border-radius: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--Primary-Colors, #ed5a25);
+  transition: 0.5s;
+}
+
+.News-Promotions .writing .right-side .img-double-1 .img2:hover {
+  background: var(--Primary-Colors, #ed5a25);
+  color: #ffece5;
+}
+
+/* kết thuc */
+
+.News-Promotions .new-banner {
+  width: 100%;
+  max-width: 75rem;
+  height: 24.75rem;
+  flex-shrink: 0;
+
+  gap: 2.5rem;
+  display: flex;
+  margin-top: 1.5rem;
+}
+.News-Promotions .new-banner .span-main {
+  width: 23.3rem;
+  height: auto;
+  flex-shrink: 0;
+  background: aqua;
+  outline: none;
+  border-radius: 1.25rem;
+  border: 1px solid var(--Background-02, #ededed);
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.News-Promotions .new-banner .span-main img {
+  width: 20.62325rem;
+  height: 16.5625rem;
+  flex-shrink: 0;
+  border-radius: 0.9375rem;
+  background: cover no-repeat;
+  margin-top: 0.8rem;
+}
+.News-Promotions .new-banner .span-main .text-new {
+  color: var(--Greys-Colors-01, #404040);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.97031rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 20.49825rem;
+  height: 4.0625rem;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.News-Promotions .new-banner .span-main:hover {
+  border: 1px solid #ed5a25;
+}

@@ -299,13 +299,14 @@
 .hbot .hbot-h {
   display: none;
 }
-.hmain .hmain-ss {
+
+.hbot .hbot-di {
   display: none;
 }
-.header .hmain .tk1 {
+.hmain .hmain-img {
   display: none;
 }
-.header .hmain .tk112 {
+.hmain .hmain-img2 {
   display: none;
 }
 
@@ -326,11 +327,14 @@
   .hbot ul {
     display: none;
   }
-  .hbot .Hotline- {
+  .hbot .Hotline-11 {
     position: absolute;
     right: 1rem;
     margin-right: 0;
+    width: auto;
+    display: flex;
   }
+
   .hmain {
     position: absolute;
     top: 3rem;
@@ -355,5 +359,24 @@
     position: absolute;
     right: 1rem;
     display: flex;
+  }
+  .hbot .hbot-di {
+    display: flex;
+    position: absolute;
+    left: 1rem;
+  }
+  .htop {
+    display: none;
+  }
+  .hmain .hmain-img {
+    display: flex;
+    position: absolute;
+    left: 1rem;
+  }
+  .hmain .hmain-img2 {
+    display: flex;
+    position: absolute;
+    right: 1rem;
+    gap: 0.5rem;
   }
 }

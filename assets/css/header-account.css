@@ -194,7 +194,10 @@
   gap: 0.52569rem;
   margin-right: 6.92rem;
 }
-.hbot .Hotline- span {
+.hbot .Hotline- .span-21 {
+  display: none;
+}
+.hbot .Hotline- .span-22 {
   display: block;
 
   width: 1.05144rem;
@@ -283,5 +286,28 @@
     display: block;
     position: absolute;
     right: 3rem;
+  }
+  .hbot .Hotline- a {
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.92rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .hbot .Hotline- .span-22 {
+    display: none;
+  }
+  .hbot .Hotline- .span-21 {
+    display: flex;
+
+    width: 1.05144rem;
+    height: 1.05144rem;
+    flex-shrink: 0;
+    align-items: center;
+    border-radius: 1.05144rem;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -26,8 +26,8 @@
 .header {
   width: 100%;
   height: auto;
-
-  position: absolute;
+  z-index: 1000;
+  position: fixed;
 }
 /* phần htop*/
 .htop {

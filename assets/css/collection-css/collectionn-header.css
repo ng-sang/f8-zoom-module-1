@@ -27,7 +27,8 @@
   width: 100%;
   height: auto;
 
-  position: absolute;
+  position: fixed;
+  z-index: 100000;
 }
 /* phần htop*/
 .htop {

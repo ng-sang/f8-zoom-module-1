@@ -699,8 +699,9 @@
 }
 
 .main .product .product-all .product-alll .product-all1 .product-all1img2 {
-  margin-left: 10rem;
-  margin-top: 1rem;
+  top: 5%;
+  left: 80%;
+  position: relative;
   width: 1.5rem;
   height: 1.5rem;
   flex-shrink: 0;

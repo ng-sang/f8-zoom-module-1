@@ -383,8 +383,8 @@ img {
   .product-alll
   .product-all1
   .product-all1img2 {
-  margin-left: 10rem;
-  margin-top: 1rem;
+  top: 5%;
+  left: 80%;
   width: 1.5rem;
   height: 1.5rem;
   flex-shrink: 0;
@@ -394,6 +394,7 @@ img {
   justify-content: center;
   align-items: center;
   z-index: 100;
+  position: relative;
   transition: all 0.5s;
 }
 .main

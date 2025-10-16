@@ -28,125 +28,40 @@
   height: 11.75rem;
   z-index: 1000;
   position: fixed;
+  padding: 0;
+  margin: 0;
 }
 /* phần htop*/
-.htop {
-  width: 100%;
-  height: 25%;
-  background: #ed5a25;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-@media screen and (max-width: 576.98px) {
-  .htop {
-    display: none;
-  }
-}
-.htop .htop-right {
-  align-items: center;
-  gap: 0.78856rem;
-
-  display: flex;
-  justify-content: center;
-  left: 7%;
-  width: auto;
-  height: auto;
-  position: absolute;
-  color: var(--Greys-Colors-07, #fff);
-  font-family: "Quicksand", sans-serif;
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.htop .htop-left {
-  display: flex;
-  position: absolute;
-  gap: 0.6rem;
-  justify-content: center;
-  width: auto;
-  right: 6.1%;
-}
-.htop .htop-left .htop-left-right {
-  gap: 0.3rem;
-  display: flex;
-  width: auto;
-  height: 1.125rem;
-  justify-content: space-between;
-  align-items: center;
-}
-.htop .htop-left .htop-left-right a {
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  font-family: "Quicksand", sans-serif;
-  font-size: 0.875rem;
-  color: var(--Greys-Colors-07, #fff);
-  display: flex;
-  height: 1.125rem;
-  width: 8rem;
-  justify-content: center;
-}
-.htop .htop-left .htop-left-main {
-  gap: 0.3rem;
-  display: flex;
-  width: auto;
-  height: 1.125rem;
-  justify-content: space-between;
-  align-items: center;
-}
-.htop .htop-left .htop-left-main a {
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  font-family: "Quicksand", sans-serif;
-  font-size: 0.875rem;
-  color: var(--Greys-Colors-07, #fff);
-}
-.htop .htop-left .htop-left-left {
-  justify-content: space-between;
-  align-items: center;
-  height: 1.25rem;
-  display: flex;
-}
-
-.htop .htop-left .htop-left-left a {
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  font-family: "Quicksand", sans-serif;
-  font-size: 0.875rem;
-  color: var(--Greys-Colors-07, #fff);
-  width: 5rem;
-}
 
 /* phần hmain*/
 .hmain {
   width: 100%;
-  height: 50%;
+  height: 5.9375rem;
   position: absolute;
-  background: #fff4f1;
+  background: var(--Primary-Colors, #ed5a25);
+  box-shadow: 0 4.206px 11.25px 0 rgba(244, 244, 244, 0.5);
   display: flex;
   align-items: center;
-  top: 25%;
+  top: 0;
 }
 
 .hmain .hmain-contener-left {
   position: absolute;
-
   justify-content: center;
   align-items: center;
-  height: auto;
+  height: 5.9375rem;
   width: auto;
   left: 7%;
 }
-.hmain .logo-3 {
+.hmain .hmain-contener-left .a-tk {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 5.9375rem;
+}
+
+.hmain .hmain-contener-left .hmain .hmain-contener-left .hmain .logo-3 {
   display: none;
 }
 @media screen and (max-width: 576.98px) {
@@ -192,9 +107,24 @@
   height: 2.62856rem;
   border-radius: 99px;
   position: absolute;
-  right: 6%;
+  right: 8rem;
   background-color: #fff;
   border: 0.1px solid black;
+}
+.hmain .hmain-contener-r2 {
+  position: absolute;
+  right: 2rem;
+  display: flex;
+
+  gap: 0.5rem;
+}
+.hmain .hmain-contener-r2 a {
+  color: var(--Greys-Colors-07, #fff);
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.92rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 @media screen and (max-width: 1222.98px) {
@@ -371,9 +301,12 @@
 }
 .hbot ul .li-link .a-link:hover {
   color: var(--Primary-Colors, #ed5a25);
-  cursor: pointer;
 }
 .hbot ul .li-link span:hover {
+  color: var(--Primary-Colors, #ed5a25);
+  cursor: pointer;
+}
+.hbot ul .li-link svg:hover {
   color: var(--Primary-Colors, #ed5a25);
   cursor: pointer;
 }
@@ -385,7 +318,6 @@
   position: absolute;
   right: 6.3%;
 }
-
 .hbot .Hotline-11 span {
   display: flex;
   justify-content: center;

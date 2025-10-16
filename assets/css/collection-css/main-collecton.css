@@ -26,11 +26,19 @@
   display: flex;
   width: 100%;
   flex-shrink: 0;
-  top: 13rem;
+  top: 12rem;
   position: absolute;
-  height: 140.25rem;
-
-  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+}
+.main .content-n {
+  display: flex;
+  position: absolute;
+  width: 90%;
+  height: 138rem;
+  flex-shrink: 0;
+  top: 0rem;
+  background: #fff;
 }
 .main .tag-3 {
   display: none;
@@ -91,14 +99,12 @@
 }
 
 /* menu */
-.main .menu {
+.main .content-n .menu {
   display: flex;
   position: absolute;
-  width: 16.6875rem;
-  height: 131.75rem;
+  width: 20%;
+  height: 100%;
   flex-shrink: 0;
-
-  left: 7.75rem;
   flex-wrap: wrap;
 }
 
@@ -106,17 +112,17 @@
 .main .menu .menu-1 {
   display: flex;
   position: absolute;
-  width: 16.6875rem;
-  height: 35.1875rem;
+  width: 100%;
+  height: auto;
   flex-shrink: 0;
   border: 1px solid var(--Greys-Colors-05, #e5e5e5);
   flex-wrap: wrap;
 }
 .main .menu .menu-1 .menu-1-1 {
   display: flex;
-  position: absolute;
-  width: 16.6875rem;
-  height: 3.25rem;
+  position: relative;
+  width: 100%;
+  height: 3rem;
   justify-content: center;
   align-items: center;
   outline: none;
@@ -130,18 +136,13 @@
   font-weight: 600;
   line-height: 1.75rem; /* 155.556% */
 }
-.main .menu .menu-1 .menu-1-2 {
+
+.main .menu .menu-1 .game {
+  position: relative;
+  width: 100%;
+  height: 2.5rem;
+  align-items: center;
   display: flex;
-  position: absolute;
-  top: 4rem;
-  left: 2.7rem;
-  width: 9.29rem;
-  color: var(--Color-Text-02, #3e3e3e);
-  font-family: "Quicksand", sans-serif;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2rem; /* 200% */
 }
 
 /* menu-2 */
@@ -149,18 +150,18 @@
 .main .menu .menu-2 {
   display: flex;
   position: absolute;
-  width: 16.5625rem;
+  width: 100%;
   height: 15.5625rem;
   flex-shrink: 0;
-
-  top: 36.6875rem;
+  top: 42rem;
   border: 1px solid var(--Greys-Colors-05, #e5e5e5);
+  justify-content: center;
 }
 
 .main .menu .menu-2 .menu-2-1 {
   display: flex;
   position: absolute;
-  width: 16.5625rem;
+  width: 100%;
   height: 3.0625rem;
   flex-shrink: 0;
   color: var(--Text-colors-01, #323232);
@@ -174,18 +175,21 @@
 }
 .main .menu .menu-2 .menu-2-2 {
   display: flex;
-  width: 14.3125rem;
+  width: 80%;
   height: 7.90706rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.70513rem;
   flex-shrink: 0;
   position: absolute;
-
-  top: 5.06rem;
+  bottom: 0;
   left: 1.3rem;
 }
-
+.main .menu .menu-2 .Price-svg {
+  position: absolute;
+  top: 5rem;
+  width: 80%;
+}
 .main .menu .menu-2 .menu-2-2 .menu-2-2-Price {
   color: var(--Text-colors-02, #3e3e3e);
   font-family: "Quicksand", sans-serif;
@@ -214,31 +218,35 @@
   gap: 0.51669rem;
   flex-shrink: 0;
   border-radius: 0.25838rem;
-  background: var(--Primary-Colors, #ed5a25);
-  color: var(--Primaries-and-grays-06, #fff);
+  background: var(--Primaries-and-grays-06, #fff);
+  color: var(--Primary-Colors, #ed5a25);
   font-family: "Manrope", sans-serif;
   font-size: 0.9375rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
-
+.main .menu .menu-2 .menu-2-2 .menu-2-2l:hover {
+  background: #ff7b59;
+  color: white;
+  cursor: pointer;
+}
 /* menu-3 */
 .main .menu .menu-3 {
   display: flex;
   position: absolute;
-  width: 16.5625rem;
+  width: 100%;
   height: 17.25rem;
   flex-shrink: 0;
 
-  top: 53.62rem;
+  top: 59rem;
   border: 1px solid var(--Greys-Colors-05, #e5e5e5);
 }
 
 .main .menu .menu-3 .menu-3-1 {
   display: flex;
   position: absolute;
-  width: 16.5625rem;
+  width: 100%;
   height: 3.0625rem;
   flex-shrink: 0;
   color: var(--Text-colors-01, #323232);
@@ -253,21 +261,26 @@
 .main .menu .menu-3 .menu-3-2 {
   display: flex;
   position: absolute;
-  width: 16.5625rem;
+  width: 100%;
   top: 5rem;
   flex-shrink: 0;
   flex-wrap: wrap;
-
-  left: 1.5rem;
 }
 .main .menu .menu-3 .menu-3-2 .menu-3star1 {
   display: flex;
   gap: 0.7rem;
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+  justify-content: center;
 }
 .main .menu .menu-3 .menu-3-2 .menu-3star2 {
   display: flex;
   gap: 0.7rem;
   margin-top: 1rem;
+  width: 100%;
+  height: auto;
+  justify-content: center;
 }
 .main .menu .menu-3 .menu-3-2 .menu-3star2 .menu-3star2-1 {
   width: 1rem;
@@ -281,18 +294,17 @@
 .main .menu .menu-4 {
   display: flex;
   position: absolute;
-  width: 16.5625rem;
+  width: 100%;
   height: 29.625rem;
   flex-shrink: 0;
-
-  top: 72.37rem;
+  top: 78rem;
   border: 1px solid var(--Greys-Colors-05, #e5e5e5);
 }
 
 .main .menu .menu-4 .menu-4-1 {
   display: flex;
   position: absolute;
-  width: 16.5625rem;
+  width: 100%;
   height: 3.0625rem;
   flex-shrink: 0;
   color: var(--Text-colors-01, #323232);
@@ -307,14 +319,11 @@
 .main .menu .menu-4 .menu-4-2 {
   display: flex;
   position: absolute;
-  width: 8rem;
+  width: 100%;
   height: auto;
-
-  top: 4rem;
+  top: 7rem;
   align-items: center;
   flex-wrap: wrap;
-  left: 1.5rem;
-
   color: var(--Greys-Colors-01, #404040);
   font-family: "Quicksand", sans-serif;
   font-size: 1rem;
@@ -324,21 +333,211 @@
 }
 .main .menu .menu-4 .menu-4-2 input {
   display: flex;
-  width: 50%;
-  margin-top: 1rem;
+  width: 20%;
+  position: relative;
+  left: 0;
 }
-.main .menu .menu-4 .menu-4-2 span {
+.main .menu .menu-4 .menu-4-3 {
   display: flex;
-  width: 50%;
-  margin-top: 1rem;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 9rem;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--Greys-Colors-01, #404040);
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125.081%; /* 1.25081rem */
+}
+.main .menu .menu-4 .menu-4-3 input {
+  display: flex;
+  width: 20%;
+  position: relative;
+  left: 0;
+}
+.main .menu .menu-4 .menu-4-4 {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 11rem;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--Greys-Colors-01, #404040);
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125.081%; /* 1.25081rem */
+}
+.main .menu .menu-4 .menu-4-4 input {
+  display: flex;
+  width: 20%;
+  position: relative;
+  left: 0;
+}
+.main .menu .menu-4 .menu-4-5 {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 13rem;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--Greys-Colors-01, #404040);
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125.081%; /* 1.25081rem */
+}
+.main .menu .menu-4 .menu-4-5 input {
+  display: flex;
+  width: 20%;
+  position: relative;
+
+  left: 0;
+}
+.main .menu .menu-4 .menu-4-6 {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 15rem;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--Greys-Colors-01, #404040);
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125.081%; /* 1.25081rem */
+}
+.main .menu .menu-4 .menu-4-6 input {
+  display: flex;
+  width: 20%;
+  position: relative;
+
+  left: 0;
+}
+.main .menu .menu-4 .menu-4-7 {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 17rem;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--Greys-Colors-01, #404040);
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125.081%; /* 1.25081rem */
+}
+.main .menu .menu-4 .menu-4-7 input {
+  display: flex;
+  width: 20%;
+  position: relative;
+
+  left: 0;
+}
+.main .menu .menu-4 .menu-4-8 {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 19rem;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--Greys-Colors-01, #404040);
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125.081%; /* 1.25081rem */
+}
+.main .menu .menu-4 .menu-4-8 input {
+  display: flex;
+  width: 20%;
+  position: relative;
+
+  left: 0;
+}
+.main .menu .menu-4 .menu-4-9 {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 21rem;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--Greys-Colors-01, #404040);
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125.081%; /* 1.25081rem */
+}
+.main .menu .menu-4 .menu-4-9 input {
+  display: flex;
+  width: 20%;
+  position: relative;
+
+  left: 0;
 }
 
+.main .menu .menu-4 .menu-4-10 {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 23rem;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--Greys-Colors-01, #404040);
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125.081%; /* 1.25081rem */
+}
+.main .menu .menu-4 .menu-4-10 input {
+  display: flex;
+  width: 20%;
+  position: relative;
+  left: 0;
+}
+.main .menu .menu-4 .menu-4-11 {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 25rem;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--Greys-Colors-01, #404040);
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125.081%; /* 1.25081rem */
+}
+.main .menu .menu-4 .menu-4-11 input {
+  display: flex;
+  width: 20%;
+  position: relative;
+  left: 0;
+}
 /*menu-5*/
 
 .main .menu .menu-5 {
   display: flex;
   position: absolute;
-  width: 16.6875rem;
+  width: 100%;
   height: 27.625rem;
   flex-shrink: 0;
   border-radius: 1.5625rem;
@@ -347,7 +546,7 @@
   justify-content: center;
 }
 .main .menu .menu-5 img {
-  width: 15.9375rem;
+  width: 100%;
   height: 11.21138rem;
   flex-shrink: 0;
   position: absolute;
@@ -363,6 +562,8 @@
   line-height: normal;
   top: 13rem;
   display: flex;
+  width: 100%;
+  justify-content: center;
 }
 .main .menu .menu-5 .View-all {
   position: absolute;
@@ -376,16 +577,14 @@
   gap: 0.625rem;
   flex-shrink: 0;
   border-radius: 6.25rem;
-  border: 1px solid var(--Greys-Colors-07, #fff);
   background: var(--Greys-Colors-07, #fff);
   color: #ed5a25;
-
-  /* Body 2 (Regular) */
   font-family: "Quicksand", sans-serif;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.25rem; /* 142.857% */
+  line-height: 1.25rem;
+  transition: all 0.5s;
 }
 .main .menu .menu-5 .View-all span {
   display: flex;
@@ -399,25 +598,24 @@
   transition: all 0.5s;
 }
 
-.main .menu .menu-5 .View-all span:hover {
-  background: yellow;
-  border-radius: 50%;
-  width: 1rem;
-  height: 1rem;
+.main .menu .menu-5 .View-all:hover {
+  background: #ed5a25;
+  color: white;
 }
 
 /* product */
 .main .product {
   display: flex;
   position: absolute;
-  width: 60%;
-  height: 112rem;
+  width: 70%;
+  height: 111.4rem;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
-
-  left: 25.31rem;
+  gap: 2rem;
+  left: 30%;
   flex-wrap: wrap;
+
+  overflow: hidden;
 }
 @media screen and (max-width: 576.98px) {
   .main .product {
@@ -438,7 +636,7 @@
 .main .product .product-conten {
   position: absolute;
   display: flex;
-  width: 57.25rem;
+  width: 100%;
   height: 1.5rem;
   justify-content: space-between;
   color: var(--Text-colors-01, #323232);
@@ -467,14 +665,14 @@
   display: flex;
   width: 100%;
   height: 109rem;
-
   margin-top: 3rem;
   flex-wrap: wrap;
-  justify-content: center;
+  position: absolute;
+  gap: 1.5rem;
+  overflow: hidden;
 }
 
 .main .product .product-all .product-alll {
-  margin-top: 0.3rem;
   width: 13.75rem;
   height: 20.625rem;
   flex-shrink: 0;
@@ -649,8 +847,7 @@
   align-items: center;
   gap: 1.4375rem;
   height: 2.75rem;
-
-  bottom: 2rem;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   align-items: center;

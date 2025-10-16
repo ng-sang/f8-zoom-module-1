@@ -31,23 +31,21 @@ img {
 }
 
 .main {
-  max-width: 90rem;
   width: 100%;
   height: auto;
   flex-shrink: 0;
-
   position: absolute;
-  top: 9.3125rem;
+  top: 12rem;
   display: flex;
   justify-content: center;
+  background: yellow;
 }
 
 .main .main-middle {
-  width: 100%;
-  max-width: 75.1875rem;
-  margin-top: 1rem;
-  height: auto;
+  width: 83.3%;
+  top: 0;
   position: absolute;
+  justify-content: center;
 }
 
 /* bắt đầu phần css main-poster */
@@ -70,27 +68,44 @@ img {
   height: 100%;
   right: 0;
 }
+@media screen and (max-width: 576.98px) {
+  .main .main-middle .main-poster {
+    height: 18.625rem;
+  }
+  .main .main-middle .main-poster img {
+    width: 150%;
+    top: 0;
+    right: 25%;
+    transform: translate(15%);
+  }
+}
 /* kết thúc phần css main-poster */
 
 /* bắt đầu css của function-bar */
 
 .main .main-middle .function-bar {
-  display: inline-flex;
+  width: 100%;
+  display: flex;
   justify-content: space-between;
   align-items: flex-start;
   position: absolute;
   top: 30rem;
   left: 0;
-  gap: 4rem;
-
-  width: 100%;
+  gap: 5%;
+  flex-wrap: wrap;
 }
+
 .main-middle .function-bar .function-1 {
   display: flex;
-  width: 10%;
+  width: 15%;
   flex-direction: column;
   align-items: center;
   gap: 0.75rem;
+}
+@media screen and (max-width: 576.98px) {
+  .main .main-middle .function-bar {
+    top: 22rem;
+  }
 }
 .function-bar .function-1 .sp1 {
   display: flex;
@@ -99,13 +114,14 @@ img {
   justify-content: center;
 }
 .function-1 .sp1 .svg1 {
-  width: 5rem;
-  height: 5rem;
+  width: 100%;
+  height: 100%;
   flex-shrink: 0;
   fill: var(--Secondary-Colors-12, #fff4f1);
   display: flex;
   position: relative;
 }
+
 .function-1 .sp1 .svg2 {
   width: 2rem;
   height: 2rem;
@@ -114,6 +130,11 @@ img {
   display: flex;
   position: absolute;
   top: 20%;
+}
+@media screen and (max-width: 576.98px) {
+  .function-1 .sp1 .svg2 {
+    top: 15%;
+  }
 }
 .function-1 .text1 {
   color: var(--Color-Text-02, #3e3e3e);
@@ -125,6 +146,11 @@ img {
   font-weight: 600;
   line-height: 1.75rem; /* 155.556% */
   align-self: stretch;
+}
+@media screen and (max-width: 576.98px) {
+  .function-1 .text1 {
+    font-size: 0.8rem;
+  }
 }
 
 /* kết thúc phần css function-bar */
@@ -190,6 +216,7 @@ img {
   overflow: hidden;
   position: relative;
 }
+
 .poster-small .poster-small-left div {
   width: 60%;
   height: 25.37388rem;
@@ -216,6 +243,14 @@ img {
   right: 2rem;
   position: absolute;
 }
+@media screen and (max-width: 576.98px) {
+  .main .main-middle .poster-small {
+    top: 34rem;
+  }
+  .poster-small .poster-small-left {
+    display: none;
+  }
+}
 /* kết thúc phần css poster-small */
 
 /* bắt đầu phần css display-products */
@@ -227,6 +262,9 @@ img {
 
   position: absolute;
   top: 59rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* bắt đầu phần css navigation-bar */
@@ -237,18 +275,22 @@ img {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.75rem;
-  position: absolute;
+  position: relative;
   height: auto;
   align-items: flex-start;
+  height: auto;
 }
-.navigation-bar span {
+.navigation-bar .span-big {
   display: flex;
   display: flex;
   width: 100%;
   gap: 1.25rem;
+  overflow: hidden;
+  flex-wrap: wrap;
+  height: 2rem;
 }
-.navigation-bar span .spa1 {
-  width: auto;
+.navigation-bar .span-big .spa1 {
+  width: 7rem;
   height: 2rem;
   flex-shrink: 0;
   display: flex;
@@ -266,7 +308,7 @@ img {
   line-height: 1.25rem; /* 142.857% */
   transition: all 0.5s;
 }
-.navigation-bar span .spa1:hover {
+.navigation-bar .span-big .spa1:hover {
   color: #ffffff;
   background: #ed5a25;
 
@@ -277,14 +319,14 @@ img {
 .display-products .product-display {
   display: flex;
   width: 100%;
-
   position: absolute;
-  height: auto;
-
-  top: 2.94rem;
+  height: 90%;
+  top: 4.5%;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
+
+  overflow: hidden;
 }
 .display-products .product-display .spad1 {
   width: 18%;
@@ -354,6 +396,15 @@ img {
   z-index: 100;
   transition: all 0.5s;
 }
+.main
+  .main-middle
+  .product-display
+  .product-alll
+  .product-all1
+  .product-all1img2:hover {
+  background: #ed5a25;
+}
+
 .main
   .main-middle
   .product-display
@@ -473,16 +524,21 @@ img {
 
 .display-products .span-button {
   display: flex;
-  width: 100%;
-  height: auto;
+  width: 7rem;
+  height: 3rem;
   justify-content: center;
+
+  user-select: none;
+  position: absolute;
+  bottom: 0;
+  align-items: center;
 }
 .display-products .span-button button {
   background: #fff4f1;
   position: absolute;
   bottom: 0;
-  width: 9.32063rem;
-  height: 2.25rem;
+  width: 100%;
+  height: 85%;
   flex-shrink: 0;
   border-radius: 8.08619rem;
   border: 1.294px solid var(--Secondary-Colors-12, #fff4f1);
@@ -507,7 +563,7 @@ img {
   width: 100%;
   height: 18.4375rem;
   flex-shrink: 0;
-  position: absolute;
+  position: relative;
   overflow: hidden;
   top: 110rem;
   border-radius: 1.875rem;
@@ -620,13 +676,14 @@ img {
 
 /* kết thúc phần css poster-announcement */
 
+/* .products-by-category */
+
 .products-by-category {
   top: 132rem;
   width: 100%;
-  height: auto;
+  height: 46.8125rem;
   flex-shrink: 0;
   position: absolute;
-
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -634,13 +691,14 @@ img {
 /* css mục lục*/
 .products-by-category .table-of-contents {
   width: 100%;
-  height: auto;
+  height: 5%;
   display: flex;
   justify-content: space-between;
+  position: absolute;
 }
 .products-by-category .table-of-contents .sps1 {
-  width: 26.80625rem;
-  height: 2.5rem;
+  width: auto;
+  height: 100%;
   display: block;
   align-items: center;
   color: var(--Color-Text-01, #323232);
@@ -652,11 +710,11 @@ img {
   line-height: normal;
 }
 .products-by-category .table-of-contents .sps2 {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 0.75rem;
   width: auto;
-  height: auto;
+  height: 100%;
 }
 
 .products-by-category .table-of-contents .sps2 .sps2-1 {
@@ -670,81 +728,74 @@ img {
   line-height: 1.5rem; /* 150% */
 }
 
-.table-of-contents .sps2 .sps2-2 {
-  display: flex;
-  align-items: center;
-  gap: 0.3125rem;
-  width: 3.31rem;
-}
-
-.table-of-contents .sps2 .sps2-2 .lb1 {
-  width: 1.5rem;
-  height: 1.5rem;
-  flex-shrink: 0;
-  background: var(--Primary-Colors, #ed5a25);
-  border-radius: 1.5rem;
+.table-of-contents .sps2 .img-double-1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s;
+  gap: 0.75rem;
 }
-.table-of-contents .sps2 .sps2-2 .lb1 img {
-  width: 1.125rem;
-  height: 1.125rem;
-  flex-shrink: 0;
-}
-.table-of-contents .sps2 .sps2-2 .lb2 {
+.table-of-contents .sps2 .img-double-1 .img1 {
   width: 1.5rem;
   height: 1.5rem;
   flex-shrink: 0;
   background: #ffece5;
   border-radius: 1.5rem;
-  display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
+  font-size: 1rem;
+  color: var(--Primary-Colors, #ed5a25);
+  transition: 0.5s;
 }
-
-.table-of-contents .sps2 .sps2-2 .lb2 img {
-  width: 1.125rem;
-  height: 1.125rem;
+.table-of-contents .sps2 .img-double-1 .img2 {
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
   flex-shrink: 0;
-  color: white;
+  background: #ffece5;
+  border-radius: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--Primary-Colors, #ed5a25);
+  transition: 0.5s;
 }
-
-.table-of-contents .sps2 .sps2-2 .lb1:hover {
-  background: var(--Primary-Colors, #4a1805);
+.table-of-contents .sps2 .img-double-1 .img1:hover {
+  background: var(--Primary-Colors, #ed5a25);
+  color: #ffece5;
 }
-.table-of-contents .sps2 .sps2-2 .lb2:hover {
-  background: var(--Primary-Colors, #4a1805);
+.table-of-contents .sps2 .img-double-1 .img2:hover {
+  background: var(--Primary-Colors, #ed5a25);
+  color: #ffece5;
 }
 
 .product-banner {
   width: 100%;
-  height: auto;
+  height: 35%;
   flex-shrink: 0;
-
   position: absolute;
-  top: 4rem;
+  top: 7%;
   display: flex;
   justify-content: space-between;
 }
 .product-banner .left- {
   width: 45%;
-  height: 15.6875rem;
+  height: 100%;
   flex-shrink: 0;
   border-radius: 1.875rem;
   background: #fff4f1;
-  position: relative;
+  position: absolute;
   overflow: hidden;
 }
 .product-banner .Right- {
-  position: relative;
+  position: absolute;
   width: 45%;
-  height: 15.6875rem;
+  height: 100%;
   flex-shrink: 0;
   border-radius: 1.875rem;
   background: #fff4f1;
   overflow: hidden;
+  right: 0;
 }
 .product-banner .left- .left-1 {
   position: absolute;
@@ -800,55 +851,62 @@ img {
 .product-catalog1 {
   display: flex;
   width: 100%;
+  height: 44%;
   align-items: center;
   gap: 1.5rem;
-
   position: absolute;
-  height: auto;
-  top: 22.5rem;
+  flex-wrap: wrap;
+  top: 45%;
+  justify-content: center;
+  overflow: hidden;
 }
 .product-catalog1 .ssss {
-  width: 18.4%;
-  height: 20.625rem;
+  width: 13.75rem;
+  height: 100%;
   flex-shrink: 0;
-
   justify-content: center;
   display: flex;
   border-radius: 1.875rem;
   border: 1px solid var(--Greys-Colors-06, #ff9f7c);
-  background: #fff;
+
   flex-wrap: wrap;
+  position: relative;
 }
 .product-catalog1 .ssss .immm1 {
   width: 95%;
-  height: 10.75rem;
+  height: 50%;
   flex-shrink: 0;
   border-radius: 1.25rem;
   background: cover no-repeat;
-  margin-top: 0.5rem;
+  top: 3%;
+  position: absolute;
 }
 
 .product-catalog1 .ssss .immm2 {
   width: 1.5rem;
   height: 1.5rem;
   flex-shrink: 0;
-  margin-top: -15rem;
-  margin-left: 9rem;
-  position: relative;
+  top: 3%;
+  right: 3%;
   border-radius: 50%;
   background: white;
   border: 0.2rem solid white;
+  position: absolute;
+  transition: 0.5s;
+}
+.product-catalog1 .ssss .immm2:hover {
+  background: #ed5a25;
+  border: 0.2rem solid #ed5a25;
 }
 
 .product-catalog1 .ssss .ssss1 {
   display: flex;
-  width: 10.16169rem;
+  width: 80%;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
-  margin-top: 12.5rem;
-  height: 4.56rem;
-
+  top: 60%;
+  height: 19%;
   position: absolute;
 }
 .product-catalog1 .ssss .ssss1 .ssss1-1 {
@@ -859,6 +917,7 @@ img {
   font-weight: 400;
   line-height: normal;
   align-self: stretch;
+  position: absolute;
 }
 .product-catalog1 .ssss .ssss1 .ssss1-2 {
   color: var(--Primary-Colors, #ed5a25);
@@ -867,11 +926,13 @@ img {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  position: absolute;
+  bottom: 0;
 }
 
 .product-catalog1 .ssss button {
-  width: 11.875rem;
-  height: 2.25rem;
+  width: 70%;
+  height: 10%;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
@@ -888,7 +949,8 @@ img {
   line-height: normal;
   transition: all 0.5s;
   position: absolute;
-  bottom: 1rem;
+  bottom: 5%;
+  user-select: none;
 }
 .product-catalog1 .ssss button:hover {
   color: white;
@@ -915,17 +977,18 @@ img {
 }
 .products-by-category .button-end {
   position: absolute;
-  width: 100%;
-  height: 2.25rem;
+  width: 7rem;
+  height: 5%;
   transition: 0.5s;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 45rem;
+  bottom: 3%;
+  user-select: none;
 }
 .products-by-category .button-end button {
-  width: 9.32063rem;
-  height: 2.25rem;
+  width: 100%;
+  height: 100%;
   background: #fff4f1;
   position: absolute;
   bottom: 0;
@@ -946,11 +1009,12 @@ img {
   color: #fff;
 }
 
+/* .best-selling-products */
+
 .best-selling-products {
-  max-width: 75rem;
   top: 180rem;
   width: 100%;
-  height: auto;
+  height: 29.75rem;
   flex-shrink: 0;
   position: absolute;
   display: flex;
@@ -958,7 +1022,7 @@ img {
 /*writing */
 .best-selling-products .writing {
   width: 100%;
-  height: auto;
+  height: 2.5rem;
   display: flex;
   justify-content: space-between;
 
@@ -1034,42 +1098,47 @@ img {
 /* kết thúc*/
 
 .best-selling-products .product-image {
-  max-width: 75rem;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 23.3125rem;
   flex-shrink: 0;
   position: absolute;
-
-  top: 3.94rem;
+  bottom: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 2.3rem;
 }
 .best-selling-products .product-image .best-selling-posters {
-  width: 28.38169rem;
-  height: 23.3125rem;
+  width: 40%;
+  height: 100%;
   flex-shrink: 0;
   border-radius: 1.875rem;
   background: var(--Primary-Colors, #ed5a25);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  position: absolute;
 }
 .best-selling-products .product-image .best-selling-posters img {
-  width: 27.07175rem;
-  height: 14.25rem;
+  width: 80%;
+  height: 60%;
   flex-shrink: 0;
+
+  position: absolute;
 }
 .best-selling-products .product-image .best-selling-posters span {
   color: var(--Secondary-Colors-12, #fff4f1);
   display: flex;
-
   font-family: "Quicksand", sans-serif;
   font-size: 2rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  width: 22.5625rem;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 60%;
+  text-align: center;
+  justify-content: center;
 }
 .best-selling-products .product-image .best-selling-posters .bt1 {
   display: flex;
@@ -1083,12 +1152,14 @@ img {
   border: 1px solid var(--Greys-Colors-07, #fff);
   background: var(--Greys-Colors-07, #fff);
   color: #ed5a25;
-
   font-family: "Quicksand", sans-serif;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
   line-height: 1.25rem;
+  position: absolute;
+  top: 90%;
+  transform: translateY(-85%);
   transition: all 0.5s;
 }
 .best-selling-products .product-image .best-selling-posters .bt1:hover {
@@ -1101,26 +1172,32 @@ img {
 
 .best-selling-products .set-3-products {
   display: flex;
-  width: 44.31038rem;
+  width: 60%;
+  height: 90%;
   align-items: center;
   gap: 1.5rem;
+  position: absolute;
+  right: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
 }
 
 /* hình ảnh sản phẩm */
 .best-selling-products .set-3-products .product-images {
   width: 13.75rem;
-  height: 20.625rem;
+  height: 100%;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
-
   border-radius: 1.875rem;
   border: 1px solid var(--Greys-Colors-06, #f2f2f2);
   background: #fff;
+  position: relative;
 }
 .best-selling-products .set-3-products .product-images .img1 {
-  width: 12.375rem;
-  height: 10.75rem;
+  width: 95%;
+  height: 50%;
   flex-shrink: 0;
   border-radius: 1.25rem;
   margin-top: 0.3rem;
@@ -1130,12 +1207,16 @@ img {
   width: 1.5rem;
   height: 1.5rem;
   flex-shrink: 0;
-  top: 2rem;
-  margin-right: -9rem;
+  top: 3%;
+  right: 3%;
   position: absolute;
   border-radius: 50%;
   background: white;
   border: 0.2rem solid white;
+}
+.best-selling-products .set-3-products .product-images .img2:hover {
+  background: #ed5a25;
+  border: 0.2rem solid #ed5a25;
 }
 .best-selling-products .set-3-products .product-images .text-price {
   display: flex;
@@ -1145,7 +1226,7 @@ img {
   gap: 0.5rem;
   position: absolute;
   flex-wrap: wrap;
-  bottom: 6rem;
+  bottom: 5rem;
 }
 
 .best-selling-products .set-3-products .product-images .text-price .text {
@@ -1174,7 +1255,7 @@ img {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 18rem;
+  bottom: 5%;
   border-radius: 8.08619rem;
   background: var(--Secondary-Colors-12, #fff4f1);
   outline: none;
@@ -1193,10 +1274,9 @@ img {
 }
 
 .Latest-products {
-  max-width: 75rem;
   top: 210rem;
   width: 100%;
-  height: auto;
+  height: 24.375rem;
   flex-shrink: 0;
   position: absolute;
   display: flex;
@@ -1205,10 +1285,9 @@ img {
 /* mục conten*/
 .Latest-products .writing {
   width: 100%;
-  height: auto;
+  height: 2.5rem;
   display: flex;
   justify-content: space-between;
-
   align-items: center;
 }
 .Latest-products .writing .left-hand-letter {
@@ -1283,27 +1362,31 @@ img {
   position: absolute;
   display: flex;
   width: 100%;
+  height: 20.6rem;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2.4rem;
+  bottom: 0;
 
-  top: 3.5rem;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
 }
 
 /* hình ảnh sản phẩm */
 .Latest-products .set-5-products .product-images {
-  width: 18%;
+  width: 13.8rem;
   height: 20.625rem;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
-
   border-radius: 1.875rem;
   border: 1px solid var(--Greys-Colors-06, #f2f2f2);
   background: #fff;
+  position: relative;
 }
 .Latest-products .set-5-products .product-images .img1 {
-  width: 12.375rem;
-  height: 10.75rem;
+  width: 95%;
+  height: 50%;
   flex-shrink: 0;
   border-radius: 1.25rem;
   margin-top: 0.3rem;
@@ -1312,12 +1395,16 @@ img {
   width: 1.5rem;
   height: 1.5rem;
   flex-shrink: 0;
-  top: 1rem;
-  margin-right: -9rem;
+  top: 3%;
+  right: 3%;
   position: absolute;
   border-radius: 50%;
   background: white;
   border: 0.2rem solid white;
+}
+.Latest-products .set-5-products .product-images .img2:hover {
+  background: #ed5a25;
+  border: 0.2rem solid #ed5a25;
 }
 .Latest-products .set-5-products .product-images .text-price {
   display: flex;
@@ -1377,12 +1464,13 @@ img {
 .block-by-category {
   display: flex;
   width: 100%;
-  max-width: 75rem;
-  height: auto;
+  height: 32.3rem;
   justify-content: space-between;
   top: 235rem;
   flex-shrink: 0;
   position: absolute;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 .block-by-category .span-main {
   width: 23.5625rem;
@@ -1553,23 +1641,25 @@ img {
 .News-Promotions {
   display: flex;
   width: 100%;
-  max-width: 75rem;
-  height: auto;
+  height: 28.5rem;
   justify-content: space-between;
   top: 270rem;
   flex-shrink: 0;
   position: absolute;
-
   flex-wrap: wrap;
 }
 
 /* mục conten*/
 .News-Promotions .writing {
   width: 100%;
-  height: auto;
+  height: 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  position: absolute;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 .News-Promotions .writing .left-hand-letter {
   color: var(--Color-Text-01, #323232);
@@ -1619,19 +1709,21 @@ img {
 
 .News-Promotions .new-banner {
   width: 100%;
-  max-width: 75rem;
   height: 24.75rem;
   flex-shrink: 0;
-
   gap: 2.5rem;
   display: flex;
-  margin-top: 1.5rem;
+  position: absolute;
+
+  bottom: 0;
+  justify-content: center;
+  overflow: hidden;
+  flex-wrap: wrap;
 }
 .News-Promotions .new-banner .span-main {
-  width: 28%;
-  height: auto;
+  width: 23.3125rem;
+  height: 100%;
   flex-shrink: 0;
-
   outline: none;
   border-radius: 1.25rem;
   border: 1px solid var(--Background-02, #ededed);
@@ -1639,14 +1731,16 @@ img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  position: relative;
 }
 .News-Promotions .new-banner .span-main img {
   width: 98%;
-  height: 16.5625rem;
+  height: 70%;
   flex-shrink: 0;
   border-radius: 0.9375rem;
   background: cover no-repeat;
   margin-top: 0.8rem;
+  position: absolute;
 }
 .News-Promotions .new-banner .span-main .text-new {
   color: var(--Greys-Colors-01, #404040);
@@ -1662,6 +1756,8 @@ img {
   justify-content: center;
   align-items: center;
   border: none;
+  position: absolute;
+  bottom: 5%;
 }
 .News-Promotions .new-banner .span-main:hover {
   border: 1px solid #ed5a25;
@@ -1670,7 +1766,6 @@ img {
 .final-banner {
   display: flex;
   width: 100%;
-
   height: 18.4375rem;
   top: 301rem;
   flex-shrink: 0;
@@ -1692,7 +1787,6 @@ img {
 .final-banner .img-polygon6 {
   width: 15.56306rem;
   height: 15.55031rem;
-
   flex-shrink: 0;
   margin-top: -7rem;
   margin-left: 6rem;

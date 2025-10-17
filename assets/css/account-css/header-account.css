@@ -1,0 +1,353 @@
+@font-face {
+  font-family: "VNIHLThuphap";
+  src: url("assets/fonts/VNI-HLThuphap.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SVN-Kimberley";
+  src: url("assets/fonts/SVN-Kimberley.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SVN-Poppins-Black";
+  src: url("assets/fonts/Poppins-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("assets/fonts/Quicksand.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+  width: 100%;
+  height: 11.75rem;
+  z-index: 1000;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+}
+/* phần htop*/
+
+/* phần hmain*/
+.hmain {
+  width: 100%;
+  height: 5.9375rem;
+  position: absolute;
+  background: var(--Primary-Colors, #ed5a25);
+  box-shadow: 0 4.206px 11.25px 0 rgba(244, 244, 244, 0.5);
+  display: flex;
+  align-items: center;
+  top: 0;
+}
+
+.hmain .hmain-contener-left {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 5.9375rem;
+  width: auto;
+  left: 7%;
+}
+.hmain .hmain-contener-left .a-tk {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 5.9375rem;
+}
+
+.hmain .hmain-contener-left .hmain .hmain-contener-left .hmain .logo-3 {
+  display: none;
+}
+@media screen and (max-width: 576.98px) {
+  .hmain .hmain-contener-left {
+    display: none;
+  }
+  .hmain .logo-3 {
+    display: flex;
+    position: absolute;
+    left: 5%;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.hmain .hmain-contener-left a {
+  display: flex;
+  align-items: center;
+  color: #404040;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 2.024rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.89144rem;
+}
+.hmain .hmain-contener-left a span {
+  color: #ed5a25;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.024rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.89144rem;
+}
+
+.hmain .hmain-contener-right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.78856rem;
+  width: 30%;
+  height: 2.62856rem;
+  border-radius: 99px;
+  position: absolute;
+  right: 8rem;
+  background-color: #fff;
+  border: 0.1px solid black;
+}
+.hmain .hmain-contener-r2 {
+  position: absolute;
+  right: 2rem;
+  display: flex;
+
+  gap: 0.5rem;
+}
+.hmain .hmain-contener-r2 a {
+  color: var(--Greys-Colors-07, #fff);
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.92rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media screen and (max-width: 1222.98px) {
+  .hmain .hmain-contener-right {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 1016.98px) {
+  .hmain .hmain-contener-right {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 768.98px) {
+  .hmain .hmain-contener-right {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 649.98px) {
+  .hmain .hmain-contener-right {
+    width: 60%;
+    right: 0;
+  }
+}
+
+.hmain .hmain-contener-right .categories {
+  display: flex;
+  width: auto;
+  height: 100%;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  color: var(--Greys-Colors-03, #aeaeae);
+  font-family: "Manrope", sans-serif;
+  font-size: 0.92rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  top: 0;
+  left: 2%;
+}
+
+.hmain .hmain-contener-right .input-text {
+  border: none;
+  outline: none;
+  color: var(--Greys-Colors-03, #aeaeae);
+  font-family: "Manrope", sans-serif;
+  font-size: 0.92rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 30%;
+  top: 0;
+}
+
+@media screen and (max-width: 576.98px) {
+  .hmain .hmain-contener-right .categories {
+    display: none;
+  }
+  .hmain .hmain-contener-right .input-text {
+    display: none;
+  }
+}
+
+.hmain .hmain-contener-right .search-icon {
+  position: absolute;
+  width: 7%;
+  height: 80%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 90%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.5s;
+}
+.hmain .hmain-contener-right .logo-tk {
+  display: none;
+}
+@media screen and (max-width: 576.98px) {
+  .hmain .hmain-contener-right {
+    width: 3rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: none;
+    gap: 1rem;
+    background: var(--Secondary-Colors-12, #fff4f1);
+  }
+  .hmain .hmain-contener-right .categories {
+    display: none;
+  }
+  .hmain .hmain-contener-right .input-text {
+    display: none;
+  }
+  .hmain .hmain-contener-right .search-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    left: 0;
+  }
+  .hmain .hmain-contener-right .logo-tk {
+    display: flex;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.hmain .hmain-contener-right .search-icon:hover {
+  background: #ed5a25;
+}
+
+/* phần hbot*/
+.hbot {
+  width: 100%;
+  height: 25%;
+  position: absolute;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 75%;
+  background: #fff;
+  box-shadow: 0 4.206px 11.25px 0 rgba(244, 244, 244, 0.5);
+  margin: 0;
+}
+@media screen and (max-width: 576.98px) {
+  .hbot {
+    top: 0;
+    background: var(--Primary-Colors, #ed5a25);
+  }
+}
+.hbot .ul-menu {
+  display: none;
+}
+.hbot ul {
+  color: var(--Greys-Colors-01, #404040);
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.92rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  list-style: none;
+  margin-left: 7%;
+  gap: 1rem;
+  width: 22%;
+  align-items: center;
+  width: auto;
+}
+@media screen and (max-width: 576.98px) {
+  .hbot ul {
+    display: none;
+  }
+  .hbot .ul-menu {
+    display: flex;
+    position: absolute;
+    left: 5%;
+  }
+}
+
+.hbot ul .li-link .a-link {
+  color: var(--Greys-Colors-01, #404040);
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.92rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.hbot ul .li-link .a-link:hover {
+  color: var(--Primary-Colors, #ed5a25);
+}
+.hbot ul .li-link span:hover {
+  color: var(--Primary-Colors, #ed5a25);
+  cursor: pointer;
+}
+.hbot ul .li-link svg:hover {
+  color: var(--Primary-Colors, #ed5a25);
+  cursor: pointer;
+}
+.hbot .Hotline-11 {
+  display: flex;
+  width: auto;
+  align-items: center;
+  gap: 0.52569rem;
+  position: absolute;
+  right: 6.3%;
+}
+.hbot .Hotline-11 span {
+  display: flex;
+  justify-content: center;
+  width: 1.05144rem;
+  height: 1.05144rem;
+  flex-shrink: 0;
+  align-items: center;
+}
+.hbot .Hotline-11 span .s1 {
+  position: absolute;
+  width: auto;
+  left: 1%;
+  top: 20%;
+  z-index: 50000;
+}
+.hbot .Hotline-11 span .s2 {
+  position: absolute;
+  width: auto;
+  left: 0;
+  z-index: 50000;
+}
+.hbot .Hotline-11 a {
+  color: var(--Greys-Colors-02, #5c5c5c);
+  font-family: Quicksand;
+  font-size: 0.92rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.hbot .Hotline-11 a:hover {
+  color: var(--Primary-Colors, #ed5a25);
+  cursor: pointer;
+}

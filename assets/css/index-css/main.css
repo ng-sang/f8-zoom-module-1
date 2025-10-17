@@ -68,17 +68,7 @@ img {
   height: 100%;
   right: 0;
 }
-@media screen and (max-width: 576.98px) {
-  .main .main-middle .main-poster {
-    height: 18.625rem;
-  }
-  .main .main-middle .main-poster img {
-    width: 150%;
-    top: 0;
-    right: 25%;
-    transform: translate(15%);
-  }
-}
+
 /* kết thúc phần css main-poster */
 
 /* bắt đầu css của function-bar */
@@ -91,22 +81,21 @@ img {
   position: absolute;
   top: 30rem;
   left: 0;
-  gap: 5%;
+  gap: 3rem;
   flex-wrap: wrap;
+  height: 7.5rem;
+  overflow: hidden;
 }
 
 .main-middle .function-bar .function-1 {
   display: flex;
-  width: 15%;
+  width: 13rem;
   flex-direction: column;
   align-items: center;
   gap: 0.75rem;
+  position: relative;
 }
-@media screen and (max-width: 576.98px) {
-  .main .main-middle .function-bar {
-    top: 22rem;
-  }
-}
+
 .function-bar .function-1 .sp1 {
   display: flex;
   width: 100%;
@@ -131,11 +120,7 @@ img {
   position: absolute;
   top: 20%;
 }
-@media screen and (max-width: 576.98px) {
-  .function-1 .sp1 .svg2 {
-    top: 15%;
-  }
-}
+
 .function-1 .text1 {
   color: var(--Color-Text-02, #3e3e3e);
   text-align: center;
@@ -146,11 +131,6 @@ img {
   font-weight: 600;
   line-height: 1.75rem; /* 155.556% */
   align-self: stretch;
-}
-@media screen and (max-width: 576.98px) {
-  .function-1 .text1 {
-    font-size: 0.8rem;
-  }
 }
 
 /* kết thúc phần css function-bar */
@@ -243,14 +223,6 @@ img {
   right: 2rem;
   position: absolute;
 }
-@media screen and (max-width: 576.98px) {
-  .main .main-middle .poster-small {
-    top: 34rem;
-  }
-  .poster-small .poster-small-left {
-    display: none;
-  }
-}
 /* kết thúc phần css poster-small */
 
 /* bắt đầu phần css display-products */
@@ -285,7 +257,7 @@ img {
   display: flex;
   width: 100%;
   gap: 1.25rem;
-  overflow: hidden;
+
   flex-wrap: wrap;
   height: 2rem;
 }
@@ -306,13 +278,13 @@ img {
   font-style: normal;
   font-weight: 600;
   line-height: 1.25rem; /* 142.857% */
+  user-select: none;
+  cursor: pointer;
   transition: all 0.5s;
 }
 .navigation-bar .span-big .spa1:hover {
   color: #ffffff;
   background: #ed5a25;
-
-  margin-top: -1rem;
 
   /* kết thúc phần css navigation-bar */
 }
@@ -439,6 +411,7 @@ img {
   font-weight: 400;
   line-height: normal;
   transition: all 0.5s;
+  user-select: none;
 }
 .main .main-middle .product-display .product-alll .text-Target {
   color: #000;
@@ -469,6 +442,7 @@ img {
 .main .main-middle .product-display .product-alll button:hover {
   color: white;
   background: #ed5a25;
+  cursor: pointer;
 }
 
 .product-display .spad1 .spad1-1 {
@@ -579,6 +553,7 @@ img {
   background: -105.459px -82px / 147.674% 142.132% no-repeat;
   right: -1rem;
   bottom: -8rem;
+  user-select: none;
 }
 .poster-announcement .imm2 {
   position: absolute;
@@ -586,6 +561,7 @@ img {
   height: 24.625rem;
   left: 10rem;
   top: 4rem;
+  user-select: none;
 }
 .poster-announcement.imm3 {
   position: absolute;
@@ -594,6 +570,7 @@ img {
   top: -17rem;
   transform: rotate(-30deg);
   left: -18rem;
+  user-select: none;
 }
 .poster-announcement.imm4 {
   position: absolute;
@@ -657,7 +634,8 @@ img {
   line-height: 1.25rem; /* 142.857% */
   justify-content: center;
   align-items: center;
-
+  cursor: pointer;
+  user-select: none;
   transition: all 0.5s;
 }
 
@@ -1161,6 +1139,8 @@ img {
   position: absolute;
   top: 90%;
   transform: translateY(-85%);
+  user-select: none;
+  cursor: pointer;
   transition: all 0.5s;
 }
 .best-selling-products .product-image .best-selling-posters .bt1:hover {
@@ -1267,6 +1247,8 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  user-select: none;
+  cursor: pointer;
   transition: all 0.5s;
 }
 .set-3-products .product-images .button-buy:hover {
@@ -1454,6 +1436,8 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  user-select: none;
+  cursor: pointer;
   transition: all 0.5s;
 }
 
@@ -1845,8 +1829,9 @@ img {
   border: 1px solid var(--Primary-Colors, #ed5a25);
   background: #f5f6f8;
   color: #ed5a25;
+  cursor: pointer;
+  user-select: none;
 
-  /* Body 2 (Regular) */
   font-family: "Quicksand", sans-serif;
   font-size: 0.875rem;
   font-style: normal;
@@ -1857,4 +1842,40 @@ img {
 .final-banner .text-new-final span:nth-child(3):hover {
   background: #ed5a25;
   color: #f5f6f8;
+}
+@media screen and (max-width: 991.98px) {
+  .main .main-middle .function-bar {
+    justify-content: space-around;
+    height: 18rem;
+  }
+  .main .main-middle .main-poster img {
+    width: 150%;
+  }
+  .main .main-middle .poster-small {
+    top: 48rem;
+  }
+  .display-products {
+    top: 65rem;
+  }
+  .poster-announcement {
+    top: 114rem;
+  }
+  .poster-announcement .imm2 {
+    width: 15rem;
+  }
+  .products-by-category {
+    top: 133rem;
+  }
+  .block-by-category {
+    justify-content: center;
+    gap: 0.1rem;
+  }
+}
+
+@media screen and (max-width: 768.98px) {
+  .navigation-bar .span-big {
+    overflow: hidden;
+  }
+  .function-1 .sp1 .svg2 {
+  }
 }
